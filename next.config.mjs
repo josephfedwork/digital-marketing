@@ -7,6 +7,7 @@ try {
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  output: "export",  // <=== enables static exports
   eslint: {
     ignoreDuringBuilds: true,
   },
@@ -21,7 +22,6 @@ const nextConfig = {
     parallelServerBuildTraces: true,
     parallelServerCompiles: true,
   },
-  output: "export",  // <=== enables static exports
   reactStrictMode: true,
 
 }
