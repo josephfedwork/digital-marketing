@@ -7,9 +7,10 @@ try {
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  output: "export",  // <=== enables static exports
-  trailingSlash: true,  // <=== Important for GitHub Pages
-  
+  output: "export",
+  trailingSlash: true,
+  basePath: '/digital-marketing',
+  assetPrefix: '/digital-marketing/',
   // If your repo is named something other than username.github.io, uncomment these:
   // basePath: '/digital-marketing',
   // assetPrefix: '/digital-marketing/',
